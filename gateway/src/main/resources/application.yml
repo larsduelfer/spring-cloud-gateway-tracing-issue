@@ -1,0 +1,13 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: "gateway"
+  cloud:
+    gateway:
+      routes:
+        - id: hello
+          uri: http://localhost:8003
+          predicates:
+            - Path=/hello
