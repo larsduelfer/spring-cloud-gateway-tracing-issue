@@ -11,3 +11,7 @@ spring:
           uri: http://localhost:8003
           predicates:
             - Path=/hello
+        - id: hello-native
+          uri: http://localhost:8004
+          predicates:
+            - Path=/hello-native
